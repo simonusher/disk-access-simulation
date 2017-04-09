@@ -1,28 +1,19 @@
 package com.company;
 
-import com.company.comparators.MemoryAdressComparator;
-
 import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Created by Szymon on 08.04.2017.
+ * Created by Szymon on 09.04.2017.
  */
-public class SCAN extends Strategy{
-    int closerEdge;
+public class RealTimeSCAN extends RealTimeStrategy {
+    protected int closerEdge;
 
-    public SCAN() {
+    public RealTimeSCAN() {
     }
 
-    public SCAN(Queue queue) {
+    public RealTimeSCAN(Queue queue) {
         super(queue);
-        queue.requests.sort(new MemoryAdressComparator());
-        findCloserEdge();
-    }
-
-    public SCAN(Queue queue, int currentAddress) {
-        super(queue, currentAddress);
-        queue.requests.sort(new MemoryAdressComparator());
         findCloserEdge();
     }
 
@@ -31,37 +22,43 @@ public class SCAN extends Strategy{
         addToSeries(0, currentAddress);
         int index = 1;
 
-        while(!queue.requests.isEmpty()) {
+        while(!activeRequests.isEmpty() || !queue.getRequests().isEmpty()){
             Set<Request> set = findRequest();
 
             for (Request r: set) {
-                queue.getRequests().remove(r);
+                activeRequests.remove(r);
+                if (r.getDeadline() > timePassed){
+                    notServedBeforeDeadline++;
+                }
                 addToSeries(index, currentAddress);
                 index++;
             }
 
             if(currentAddress < closerEdge){
                 currentAddress ++;
+                diskHeadMoves ++;
                 timePassed ++;
+                addNewRequests();
             }
             else if(currentAddress > closerEdge){
                 currentAddress --;
+                diskHeadMoves ++;
                 timePassed ++;
+                addNewRequests();
             }
             else {
                 switchEdges(index);
                 index++;
             }
         }
-
         createChart();
-        saveChart("SCAN.jpg");
+        saveChart("RealTimeSCAN.jpg");
     }
 
 
     public Set<Request> findRequest(){
         Set<Request> set = new HashSet<Request>();
-        for (Request r: queue.getRequests()) {
+        for (Request r: activeRequests) {
             if(r.getMemAdress() == currentAddress) set.add(r);
         }
         return set;

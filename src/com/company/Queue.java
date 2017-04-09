@@ -40,22 +40,26 @@ public class Queue {
         for (int i = 0; i < numberOfRequests; i++) {
             arrivalTimeTab.add(generator.nextInt(maxArrivalTime + 1));
         }
+
         arrivalTimeTab.sort(null);
 
         this.diskSize = diskSize;
         requests = new ArrayList();
         while (requests.size() < numberOfRequests) {
+
             int x = generator.nextInt(this.diskSize) + 1;
-            int deadline = arrivalTimeTab.get(0) + generator.nextInt((int)(0.4 * this.diskSize));
+
+            int deadline = arrivalTimeTab.get(0) + generator.nextInt((int)(0.2 * this.diskSize)) + (int)(0.1 * this.diskSize);
             requests.add(new Request(x, arrivalTimeTab.get(0), deadline));
             arrivalTimeTab.remove(0);
             for(int j = 0; j < (int)(0.07 * numberOfRequests); j++){
+
                 if(requests.size() >= numberOfRequests) break;
                 int y =0;
                 while(y <= 0 || y > diskSize){
                     y = (int)(generator.nextGaussian()*(diskSize/6) + x);
                 }
-                requests.add(new Request(y, arrivalTimeTab.get(0)));
+                requests.add(new Request(y, arrivalTimeTab.get(0), -1));
                 arrivalTimeTab.remove(0);
             }
         }

@@ -1,6 +1,8 @@
 package com.company;
 
-import java.util.List;
+import com.company.comparators.DeadlineComparator;
+
+import java.util.Set;
 
 /**
  * Created by Szymon on 09.04.2017.
@@ -25,7 +27,9 @@ public class EDF extends RealTimeStrategy {
                 sortByDeadline();
                 activeRequest = activeRequests.get(0);
                 if(moveCurrentAdress()){
-
+                    if (activeRequest.getDeadline() > timePassed){
+                        notServedBeforeDeadline++;
+                    }
                     activeRequests.remove(activeRequest);
                 }
                 addToSeries(index, currentAddress);

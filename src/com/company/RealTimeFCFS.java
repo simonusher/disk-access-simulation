@@ -1,13 +1,11 @@
 package com.company;
 
-import com.company.comparators.ShortestSeekTimeComparator;
-
 /**
  * Created by Szymon on 09.04.2017.
  */
-public class RealTimeSSTF extends RealTimeStrategy{
+public class RealTimeFCFS extends RealTimeStrategy{
 
-    public RealTimeSSTF(Queue queue) {
+    public RealTimeFCFS(Queue queue) {
         super(queue);
     }
 
@@ -22,7 +20,6 @@ public class RealTimeSSTF extends RealTimeStrategy{
                 addNewRequests();
             }
             else{
-                sortBySST();
                 activeRequest = activeRequests.get(0);
                 if(moveCurrentAdress()){
                     if (activeRequest.getDeadline() > timePassed){
@@ -37,10 +34,6 @@ public class RealTimeSSTF extends RealTimeStrategy{
             }
         }
         createChart();
-        saveChart("RealTimeSSTF.jpg");
-    }
-
-    public void sortBySST(){
-        activeRequests.sort(new ShortestSeekTimeComparator(currentAddress));
+        saveChart("RealTimeFCFS.jpg");
     }
 }

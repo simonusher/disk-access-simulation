@@ -1,4 +1,6 @@
-package com.company;
+package com.company.comparators;
+
+import com.company.Request;
 
 import java.util.Comparator;
 

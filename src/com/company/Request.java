@@ -26,7 +26,7 @@ public class Request {
     }
 
     public String toString(){
-        return memAdress + " " + arrivalTime + System.lineSeparator();
+        return memAdress + " " + arrivalTime + " " + deadline + System.lineSeparator();
     }
 
     public int getMemAdress() {

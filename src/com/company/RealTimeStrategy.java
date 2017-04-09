@@ -1,13 +1,12 @@
 package com.company;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by Szymon on 09.04.2017.
  */
 public abstract class RealTimeStrategy extends Strategy{
+    int notServedBeforeDeadline = 0;
     List<Request> activeRequests;
     Request activeRequest;
     int diskHeadMoves = 0;
@@ -63,5 +62,17 @@ public abstract class RealTimeStrategy extends Strategy{
 
     public void sort(Comparator c){
         activeRequests.sort(c);
+    }
+
+    public int getNotServedBeforeDeadline() {
+        return notServedBeforeDeadline;
+    }
+
+    public Set<Request> findRequest(){
+        Set<Request> set = new HashSet<Request>();
+        for (Request r: activeRequests) {
+            if(r.getMemAdress() == currentAddress) set.add(r);
+        }
+        return set;
     }
 }
