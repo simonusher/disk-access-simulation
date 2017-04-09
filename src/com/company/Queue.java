@@ -25,25 +25,38 @@ public class Queue {
     }
 
     public Queue(Queue q){
+        this.maxArrivalTime = q.getMaxArrivalTime();
         this.numberOfRequests = q.getNumberOfRequests();
         this.diskSize = q.getDiskSize();
         this.requests = new ArrayList<Request>(q.getRequests());
     }
 
-    public Queue(int numberOfRequests, int diskSize){
-        this.diskSize = diskSize;
+    public Queue(int numberOfRequests, int diskSize, int maxArrivalTime){
+        this.numberOfRequests = numberOfRequests;
+        this.maxArrivalTime = maxArrivalTime;
+        ArrayList<Integer> arrivalTimeTab = new ArrayList<>();
         Random generator = new Random();
+
+        for (int i = 0; i < numberOfRequests; i++) {
+            arrivalTimeTab.add(generator.nextInt(maxArrivalTime + 1));
+        }
+        arrivalTimeTab.sort(null);
+
+        this.diskSize = diskSize;
         requests = new ArrayList();
         while (requests.size() < numberOfRequests) {
             int x = generator.nextInt(this.diskSize) + 1;
-            requests.add(new Request(x));
+            int deadline = arrivalTimeTab.get(0) + generator.nextInt((int)(0.4 * this.diskSize));
+            requests.add(new Request(x, arrivalTimeTab.get(0), deadline));
+            arrivalTimeTab.remove(0);
             for(int j = 0; j < (int)(0.07 * numberOfRequests); j++){
                 if(requests.size() >= numberOfRequests) break;
                 int y =0;
                 while(y <= 0 || y > diskSize){
                     y = (int)(generator.nextGaussian()*(diskSize/6) + x);
                 }
-                requests.add(new Request(y));
+                requests.add(new Request(y, arrivalTimeTab.get(0)));
+                arrivalTimeTab.remove(0);
             }
         }
 
@@ -83,6 +96,14 @@ public class Queue {
         catch (IOException e){
             e.printStackTrace();
         }
+    }
+
+    public String toString(){
+        StringBuilder sbr = new StringBuilder();
+        for (Request r: requests) {
+            sbr.append(r.toString());
+        }
+        return sbr.toString();
     }
 
     public int getNumberOfRequests() {

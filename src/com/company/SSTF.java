@@ -36,9 +36,4 @@ public class SSTF extends Strategy {
         }
         return q;
     }
-
-
-    public int getTimePassed() {
-        return timePassed;
-    }
 }

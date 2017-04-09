@@ -6,18 +6,38 @@ package com.company;
 public class Request {
     private int arrivalTime;
     private int memAdress;
-    private boolean isDone = false;
+    private int deadline;
+    private boolean wasServedBeforeDeadline = true;
+
 
     public Request(int memAdress) {
         this.memAdress = memAdress;
     }
 
-    public Request (int arrivalTime, int memAdress){
+    public Request (int memAdress, int arrivalTime){
         this.arrivalTime = arrivalTime;
         this.memAdress = memAdress;
     }
 
+    public Request(int memAdress, int arrivalTime, int deadline) {
+        this.arrivalTime = arrivalTime;
+        this.memAdress = memAdress;
+        this.deadline = deadline;
+    }
+
+    public String toString(){
+        return memAdress + " " + arrivalTime + System.lineSeparator();
+    }
+
     public int getMemAdress() {
         return memAdress;
+    }
+
+    public int getArrivalTime() {
+        return arrivalTime;
+    }
+
+    public int getDeadline() {
+        return deadline;
     }
 }

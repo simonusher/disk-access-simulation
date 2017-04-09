@@ -29,7 +29,7 @@ public abstract class Strategy {
     public Strategy(Queue queue) {
         this.queue = new Queue(queue);
         timePassed = 0;
-        currentAddress = 50;
+        currentAddress = 51;
         this.series = new XYSeries("");
         this.dataset = new XYSeriesCollection();
     }
@@ -70,5 +70,7 @@ public abstract class Strategy {
         }
     }
 
-
+    public int getTimePassed() {
+        return timePassed;
+    }
 }

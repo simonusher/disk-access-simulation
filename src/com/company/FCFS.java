@@ -25,8 +25,4 @@ public class FCFS extends Strategy {
         createChart();
         saveChart("FCFS.jpg");
     }
-
-    public int getTimePassed() {
-        return timePassed;
-    }
 }

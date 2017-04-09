@@ -1,20 +1,28 @@
 package com.company;
 
+import com.sun.org.apache.regexp.internal.RE;
+
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * Created by Szymon on 08.04.2017.
  */
 public class SCAN extends Strategy{
     int closerEdge;
 
+    public SCAN() {
+    }
+
     public SCAN(Queue queue) {
         super(queue);
-        queue.requests.sort(null);
+        queue.requests.sort(new MemoryAdressComparator());
         findCloserEdge();
     }
 
     public SCAN(Queue queue, int currentAddress) {
         super(queue, currentAddress);
-        queue.requests.sort(null);
+        queue.requests.sort(new MemoryAdressComparator());
         findCloserEdge();
     }
 
@@ -23,44 +31,51 @@ public class SCAN extends Strategy{
         addToSeries(0, currentAddress);
         int index = 1;
 
-        while(!queue.requests.isEmpty()){
-            while (currentAddress != closerEdge){
-                Request r = findClosest();
-                if(
+        while(!queue.requests.isEmpty()) {
+            Set<Request> set = findRequest();
+
+            for (Request r: set) {
+                queue.getRequests().remove(r);
+                addToSeries(index, currentAddress);
+                index++;
+            }
+
+            if(currentAddress < closerEdge){
+                currentAddress ++;
+                timePassed ++;
+            }
+            else if(currentAddress > closerEdge){
+                currentAddress --;
+                timePassed ++;
+            }
+            else {
+                switchEdges(index);
+                index++;
             }
         }
 
-        for (Integer i: queue.requests) {
-            timePassed += Math.abs(i - currentAddress);
-            currentAddress = i;
-            series.add(index, currentAddress);
-            index ++;
-        }
         createChart();
-        saveChart("SCAN");
+        saveChart("SCAN.jpg");
     }
 
 
-    public Request findClosest(){
-        Request r = queue.requests.get(0);
-        if(closerEdge == 0){
-            for (int i = queue.requests.size() - 1; i >= 0; i--) {
-                r = queue.requests.get(i);
-                if(r.getMemAdress() <= currentAddress) break;
-            }
+    public Set<Request> findRequest(){
+        Set<Request> set = new HashSet<Request>();
+        for (Request r: queue.getRequests()) {
+            if(r.getMemAdress() == currentAddress) set.add(r);
         }
-        else {
-            for (int i = 0 ; i < queue.requests.size(); i++) {
-                r = queue.requests.get(i);
-                if(r.getMemAdress() >= currentAddress) break;
-            }
-        }
-        return r;
+        return set;
+    }
+
+    public void switchEdges(int index){
+        addToSeries(index, currentAddress);
+        if(closerEdge == 0) closerEdge = queue.getDiskSize();
+        else closerEdge = 0;
     }
 
     public void findCloserEdge(){
         int x = 0;
-        if(currentAddress > Math.abs(queue.requests.size() - currentAddress)) x = queue.requests.size() - 1;
+        if(currentAddress > Math.abs(queue.getRequests().size() - currentAddress)) x = queue.getDiskSize();
         closerEdge = x;
     }
 }
