@@ -24,28 +24,41 @@ public class EDF extends RealTimeStrategy {
                 addNewRequests();
             }
             else{
-                sortByDeadline();
+                if(isThereDeadline()){
+                    sortByDeadline();
+                }
                 activeRequest = activeRequests.get(0);
                 if(moveCurrentAdress()){
                     if (activeRequest.getDeadline() < timePassed && activeRequest.getDeadline() != -1){
                         notServedBeforeDeadline++;
                     }
                     activeRequests.remove(activeRequest);
+                    addNewRequests();
                 }
                 addToSeries(index, currentAddress);
                 index++;
                 timePassed++;
-                addNewRequests();
+                if(activeRequest.getDeadline() == -1) addNewRequests();
             }
         }
         createChart();
-        saveChart("EDF.jpg");
+        saveChart("RealTimeEDF.jpg");
     }
 
     public void sortByDeadline(){
         activeRequests.sort(new DeadlineComparator(timePassed));
     }
 
+    public boolean isThereDeadline(){
+        boolean isThereDeadline = false;
+        for (Request r: activeRequests) {
+            if(r.getDeadline() != -1){
+                isThereDeadline = true;
+                break;
+            }
+        }
+        return isThereDeadline;
+    }
 
 
 }

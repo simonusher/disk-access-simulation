@@ -17,19 +17,20 @@ public class Main {
          * @param deadlineLowerBound - dolna granica liczby dodawanej do arrivalTime, w celu utworzenia deadlinu
          *                           wyrażona jako procent wielkości dysku
          * @param deadlineUpperBound - jak wyżej, górna granica
-         * @param percentOfRequestsWithDeadline - 1/procent zgłoszeń z deadlinem
+         * @param percentOfRequestsWithDeadline - 1/percentOfRequestsWithDeadline zgłoszeń z deadlinem
          */
         int numberOfRequests = 2000;
         int diskSize = 100;
-        int maxArrivalTime = 400;
+        int maxArrivalTime = 8000;
         double percentOfRequestsWithNormalDistribution = 0.07;
         double deadlineLowerBound = 0.4;
         double deadlineUpperBound = 0.8;
-        int percentOfRequestsWithDeadline = 20;
+        int percentOfRequestsWithDeadline = 10;
 
 
         Queue fc = new Queue(numberOfRequests, diskSize, maxArrivalTime, percentOfRequestsWithNormalDistribution,
                 deadlineLowerBound, deadlineUpperBound, percentOfRequestsWithDeadline);
+//        System.out.println(fc);
 
 //        System.out.println(fc);
         ArrayList<Strategy> strategies = new ArrayList<>();

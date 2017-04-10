@@ -56,7 +56,7 @@ public class FD_SCAN extends RealTimeStrategy {
             }
         }
         createChart();
-        saveChart("FD-SCAN.jpg");
+        saveChart("RealTimeFD-SCAN.jpg");
     }
 
     public Request findClosestFeasibleDeadline() {
