@@ -22,7 +22,7 @@ public class RealTimeFCFS extends RealTimeStrategy{
             else{
                 activeRequest = activeRequests.get(0);
                 if(moveCurrentAdress()){
-                    if (activeRequest.getDeadline() > timePassed){
+                    if (activeRequest.getDeadline() < timePassed && activeRequest.getDeadline() != -1){
                         notServedBeforeDeadline++;
                     }
                     activeRequests.remove(activeRequest);

@@ -27,7 +27,7 @@ public class RealTimeSCAN extends RealTimeStrategy {
 
             for (Request r: set) {
                 activeRequests.remove(r);
-                if (r.getDeadline() > timePassed){
+                if (r.getDeadline() < timePassed && r.getDeadline() != -1){
                     notServedBeforeDeadline++;
                 }
                 addToSeries(index, currentAddress);

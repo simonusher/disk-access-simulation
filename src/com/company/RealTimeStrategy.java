@@ -1,5 +1,9 @@
 package com.company;
 
+import org.jfree.chart.ChartFactory;
+import org.jfree.chart.plot.PlotOrientation;
+import org.jfree.data.xy.XYSeriesCollection;
+
 import java.util.*;
 
 /**
@@ -74,5 +78,22 @@ public abstract class RealTimeStrategy extends Strategy{
             if(r.getMemAdress() == currentAddress) set.add(r);
         }
         return set;
+    }
+
+    public void createChart(){
+        dataset = new XYSeriesCollection();
+        dataset.addSeries(series);
+        String className = this.getClass().getName();
+        className = className.substring(12);
+        chart = ChartFactory.createXYLineChart(
+                className, // Title
+                "Czas", // x-axis Label
+                "Adres zgłoszenia", // y-axis Label
+                dataset, // Dataset
+                PlotOrientation.VERTICAL, // Plot Orientation
+                true, // Show Legend
+                true, // Use tooltips
+                false // Configure chart to generate URLs?
+        );
     }
 }

@@ -2,33 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4b061be-acd4-4ceb-a6bd-b3da9b2c43fd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/RealTimeC_SCAN.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/RealTimeFCFS.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/RealTimeSCAN.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DiskAccessPlanning/com/company/ArrivalTimeComparator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DiskAccessPlanning/com/company/DeadlineComparator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DiskAccessPlanning/com/company/MemoryAdressComparator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DiskAccessPlanning/com/company/ShortestSeekTimeComparator.class" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/company/FD_SCAN.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/xd.csv" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DiskAccessPlanning/com/company/EDF.class" afterPath="$PROJECT_DIR$/out/production/DiskAccessPlanning/com/company/EDF.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DiskAccessPlanning/com/company/Main.class" afterPath="$PROJECT_DIR$/out/production/DiskAccessPlanning/com/company/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DiskAccessPlanning/com/company/Queue.class" afterPath="$PROJECT_DIR$/out/production/DiskAccessPlanning/com/company/Queue.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DiskAccessPlanning/com/company/RealTimeFCFS.class" afterPath="$PROJECT_DIR$/out/production/DiskAccessPlanning/com/company/RealTimeFCFS.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DiskAccessPlanning/com/company/RealTimeSCAN.class" afterPath="$PROJECT_DIR$/out/production/DiskAccessPlanning/com/company/RealTimeSCAN.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DiskAccessPlanning/com/company/RealTimeSSTF.class" afterPath="$PROJECT_DIR$/out/production/DiskAccessPlanning/com/company/RealTimeSSTF.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DiskAccessPlanning/com/company/RealTimeStrategy.class" afterPath="$PROJECT_DIR$/out/production/DiskAccessPlanning/com/company/RealTimeStrategy.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DiskAccessPlanning/com/company/Request.class" afterPath="$PROJECT_DIR$/out/production/DiskAccessPlanning/com/company/Request.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DiskAccessPlanning/com/company/SCAN.class" afterPath="$PROJECT_DIR$/out/production/DiskAccessPlanning/com/company/SCAN.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DiskAccessPlanning/com/company/Strategy.class" afterPath="$PROJECT_DIR$/out/production/DiskAccessPlanning/com/company/Strategy.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DiskAccessPlanning/com/company/comparators/DeadlineComparator.class" afterPath="$PROJECT_DIR$/out/production/DiskAccessPlanning/com/company/comparators/DeadlineComparator.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/EDF.java" afterPath="$PROJECT_DIR$/src/com/company/EDF.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Main.java" afterPath="$PROJECT_DIR$/src/com/company/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Queue.java" afterPath="$PROJECT_DIR$/src/com/company/Queue.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/RealTimeFCFS.java" afterPath="$PROJECT_DIR$/src/com/company/RealTimeFCFS.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/RealTimeSCAN.java" afterPath="$PROJECT_DIR$/src/com/company/RealTimeSCAN.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/RealTimeSSTF.java" afterPath="$PROJECT_DIR$/src/com/company/RealTimeSSTF.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/RealTimeStrategy.java" afterPath="$PROJECT_DIR$/src/com/company/RealTimeStrategy.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Request.java" afterPath="$PROJECT_DIR$/src/com/company/Request.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/SCAN.java" afterPath="$PROJECT_DIR$/src/com/company/SCAN.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xd.csv" afterPath="$PROJECT_DIR$/xd.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/company/ArrivalTimeComparator.java" afterPath="$PROJECT_DIR$/src/com/company/comparators/ArrivalTimeComparator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/company/DeadlineComparator.java" afterPath="$PROJECT_DIR$/src/com/company/comparators/DeadlineComparator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/company/MemoryAdressComparator.java" afterPath="$PROJECT_DIR$/src/com/company/comparators/MemoryAdressComparator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/company/ShortestSeekTimeComparator.java" afterPath="$PROJECT_DIR$/src/com/company/comparators/ShortestSeekTimeComparator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Strategy.java" afterPath="$PROJECT_DIR$/src/com/company/Strategy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/comparators/DeadlineComparator.java" afterPath="$PROJECT_DIR$/src/com/company/comparators/DeadlineComparator.java" />
     </list>
     <ignored path="DiskAccessPlanning.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,18 +52,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RealTimeSCAN.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/RealTimeSCAN.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-270">
-              <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+            <state relative-caret-position="323">
+              <caret line="19" column="80" selection-start-line="19" selection-start-column="80" selection-end-line="19" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,50 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Strategy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Strategy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Queue.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Queue.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Queue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="43" column="34" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RealTimeC_SCAN.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/RealTimeC_SCAN.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-              <folding>
-                <element signature="e#157#158#0" expanded="true" />
-                <element signature="e#185#186#0" expanded="true" />
-                <element signature="e#399#400#0" expanded="true" />
-                <element signature="e#447#448#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SCAN.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/SCAN.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1243">
-              <caret line="77" column="73" selection-start-line="77" selection-start-column="73" selection-end-line="77" selection-end-column="73" />
+            <state relative-caret-position="53">
+              <caret line="30" column="62" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -129,30 +76,8 @@
       <file leaf-file-name="RealTimeFCFS.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/RealTimeFCFS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EDF.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/EDF.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RealTimeStrategy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/RealTimeStrategy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="26" />
+            <state relative-caret-position="266">
+              <caret line="24" column="101" selection-start-line="24" selection-start-column="101" selection-end-line="24" selection-end-column="101" />
               <folding />
             </state>
           </provider>
@@ -161,9 +86,63 @@
       <file leaf-file-name="RealTimeSSTF.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/RealTimeSSTF.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="37" selection-end-column="9" />
+            <state relative-caret-position="425">
+              <caret line="27" column="95" selection-start-line="27" selection-start-column="95" selection-end-line="27" selection-end-column="95" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EDF.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/EDF.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#214#215#0" expanded="true" />
+                <element signature="e#242#243#0" expanded="true" />
+                <element signature="e#1201#1202#0" expanded="true" />
+                <element signature="e#1272#1273#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RealTimeStrategy.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/RealTimeStrategy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2006#2015#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Strategy.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Strategy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="68" column="52" selection-start-line="68" selection-start-column="52" selection-end-line="68" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeadlineComparator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/comparators/DeadlineComparator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="393">
+              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+              <folding>
+                <element signature="e#266#267#0" expanded="true" />
+                <element signature="e#317#318#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -191,7 +170,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/company/Disk.java" />
         <option value="$PROJECT_DIR$/src/com/company/FCFS.java" />
-        <option value="$PROJECT_DIR$/src/com/company/MemoryAdressComparator.java" />
         <option value="$PROJECT_DIR$/src/com/company/C_SCAN.java" />
         <option value="$PROJECT_DIR$/src/com/company/ArrivalTimeComparator.java" />
         <option value="$PROJECT_DIR$/src/com/company/EarliestDeadlineComparator.java" />
@@ -199,8 +177,6 @@
         <option value="$PROJECT_DIR$/src/com/company/DeadlineComparator.java" />
         <option value="$PROJECT_DIR$/src/com/company/ShortestSeekTimeComparator.java" />
         <option value="$PROJECT_DIR$/src/com/company/comparators/ArrivalTimeComparator.java" />
-        <option value="$PROJECT_DIR$/src/com/company/comparators/DeadlineComparator.java" />
-        <option value="$PROJECT_DIR$/src/com/company/comparators/MemoryAdressComparator.java" />
         <option value="$PROJECT_DIR$/src/com/company/comparators/ShortestSeekTimeComparator.java" />
         <option value="$PROJECT_DIR$/src/com/company/realtime/EDF.java" />
         <option value="$PROJECT_DIR$/src/com/company/Strategies/Strategy.java" />
@@ -212,18 +188,24 @@
         <option value="$PROJECT_DIR$/src/com/company/Strategies/SCAN.java" />
         <option value="$PROJECT_DIR$/src/com/company/Strategies/SSTF.java" />
         <option value="$PROJECT_DIR$/src/com/company/SSTF.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Request.java" />
-        <option value="$PROJECT_DIR$/src/com/company/RealTimeFCFS.java" />
-        <option value="$PROJECT_DIR$/src/com/company/RealTimeSSTF.java" />
-        <option value="$PROJECT_DIR$/src/com/company/RealTimeStrategy.java" />
-        <option value="$PROJECT_DIR$/src/com/company/EDF.java" />
         <option value="$PROJECT_DIR$/src/com/company/comparators/RealTimeSCAN.java" />
         <option value="$PROJECT_DIR$/src/com/company/RealTimeC_SCAN.java" />
-        <option value="$PROJECT_DIR$/src/com/company/RealTimeSCAN.java" />
         <option value="$PROJECT_DIR$/src/com/company/SCAN.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Strategy.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/company/comparators/FeasibleDeadlineComparator.java" />
+        <option value="$PROJECT_DIR$/src/com/company/comparators/FD_SCAN.java" />
+        <option value="$PROJECT_DIR$/src/com/company/MemoryAdressComparator.java" />
+        <option value="$PROJECT_DIR$/src/com/company/comparators/MemoryAdressComparator.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Request.java" />
+        <option value="$PROJECT_DIR$/src/com/company/comparators/DeadlineComparator.java" />
+        <option value="$PROJECT_DIR$/src/com/company/RealTimeStrategy.java" />
+        <option value="$PROJECT_DIR$/src/com/company/FD_SCAN.java" />
+        <option value="$PROJECT_DIR$/src/com/company/RealTimeSCAN.java" />
+        <option value="$PROJECT_DIR$/src/com/company/RealTimeFCFS.java" />
+        <option value="$PROJECT_DIR$/src/com/company/RealTimeSSTF.java" />
         <option value="$PROJECT_DIR$/src/com/company/Queue.java" />
+        <option value="$PROJECT_DIR$/src/com/company/EDF.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Strategy.java" />
       </list>
     </option>
   </component>
@@ -264,6 +246,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -325,7 +308,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -778,12 +760,13 @@
       <workItem from="1491752209442" duration="15384000" />
       <workItem from="1491769267235" duration="2932000" />
       <workItem from="1491772212932" duration="21000" />
-      <workItem from="1491772246058" duration="3504000" />
+      <workItem from="1491772246058" duration="11879000" />
+      <workItem from="1491784358615" duration="1453000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44741000" />
+    <option name="totallyTimeSpent" value="54569000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1932" height="1056" extended-state="0" />
@@ -797,7 +780,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34994584" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34994584" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -830,7 +813,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/FD_SCAN.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -839,33 +830,13 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/company/Strategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1146#1147#0" expanded="true" />
-            <element signature="e#1178#1179#0" expanded="true" />
-            <element signature="e#2059#2060#0" expanded="true" />
-            <element signature="e#2092#2093#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/FCFS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="17" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -875,9 +846,11 @@
         <state relative-caret-position="200">
           <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
           <folding>
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#744#745#0" expanded="true" />
+            <element signature="e#777#778#0" expanded="true" />
             <element signature="e#809#810#0" expanded="true" />
+            <element signature="e#941#942#0" expanded="true" />
+            <element signature="e#986#987#0" expanded="true" />
+            <element signature="e#1026#1027#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -898,10 +871,6 @@
           <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1146#1147#0" expanded="true" />
-            <element signature="e#1178#1179#0" expanded="true" />
-            <element signature="e#2059#2060#0" expanded="true" />
-            <element signature="e#2092#2093#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -918,7 +887,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -928,9 +899,11 @@
         <state relative-caret-position="125">
           <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
           <folding>
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#744#745#0" expanded="true" />
+            <element signature="e#777#778#0" expanded="true" />
             <element signature="e#809#810#0" expanded="true" />
+            <element signature="e#941#942#0" expanded="true" />
+            <element signature="e#986#987#0" expanded="true" />
+            <element signature="e#1026#1027#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -949,7 +922,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -959,9 +934,11 @@
         <state relative-caret-position="125">
           <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
           <folding>
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#744#745#0" expanded="true" />
+            <element signature="e#777#778#0" expanded="true" />
             <element signature="e#809#810#0" expanded="true" />
+            <element signature="e#941#942#0" expanded="true" />
+            <element signature="e#986#987#0" expanded="true" />
+            <element signature="e#1026#1027#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -980,7 +957,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -990,9 +969,11 @@
         <state relative-caret-position="125">
           <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
           <folding>
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#744#745#0" expanded="true" />
+            <element signature="e#777#778#0" expanded="true" />
             <element signature="e#809#810#0" expanded="true" />
+            <element signature="e#941#942#0" expanded="true" />
+            <element signature="e#986#987#0" expanded="true" />
+            <element signature="e#1026#1027#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1011,7 +992,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1021,9 +1004,11 @@
         <state relative-caret-position="125">
           <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
           <folding>
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#744#745#0" expanded="true" />
+            <element signature="e#777#778#0" expanded="true" />
             <element signature="e#809#810#0" expanded="true" />
+            <element signature="e#941#942#0" expanded="true" />
+            <element signature="e#986#987#0" expanded="true" />
+            <element signature="e#1026#1027#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1039,27 +1024,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Disk.java" />
-    <entry file="jar://D:/JDK/src.zip!/java/util/Random.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="378" column="19" selection-start-line="378" selection-start-column="19" selection-end-line="378" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Desktop/jfreechart-1.0.19/jfreechart-1.0.19/lib/jfreechart-1.0.19.jar!/org/jfree/chart/util/ParamChecks.class" />
     <entry file="jar://$USER_HOME$/Desktop/jfreechart-1.0.19/jfreechart-1.0.19/lib/jfreechart-1.0.19.jar!/org/jfree/data/xy/XYDataItem.class" />
     <entry file="jar://$USER_HOME$/Desktop/jfreechart-1.0.19/jfreechart-1.0.19/lib/jfreechart-1.0.19.jar!/org/jfree/data/general/SeriesChangeEvent.class" />
     <entry file="jar://$USER_HOME$/Desktop/jfreechart-1.0.19/jfreechart-1.0.19/lib/jfreechart-1.0.19.jar!/org/jfree/data/general/Series.class" />
     <entry file="jar://$USER_HOME$/Desktop/jfreechart-1.0.19/jfreechart-1.0.19/lib/jfreechart-1.0.19.jar!/org/jfree/data/xy/XYSeries.class" />
     <entry file="file://$PROJECT_DIR$/src/com/company/comparators/ArrivalTimeComparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/comparators/MemoryAdressComparator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
@@ -1076,43 +1046,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/comparators/DeadlineComparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Request.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#744#745#0" expanded="true" />
-            <element signature="e#809#810#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/comparators/RealTimeSCAN.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/comparators/RealTimeSCAN.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/FCFS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/SSTF.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
@@ -1125,44 +1060,8 @@
         <state relative-caret-position="323">
           <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
           <folding>
-            <element signature="e#535#536#0" expanded="true" />
+            <element signature="e#535#536#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/RealTimeSCAN.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270">
-          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/RealTimeSSTF.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="37" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/EDF.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/RealTimeStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1171,15 +1070,53 @@
         <state relative-caret-position="1243">
           <caret line="77" column="73" selection-start-line="77" selection-start-column="73" selection-end-line="77" selection-end-column="73" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Strategy.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/comparators/FeasibleDeadlineComparator.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/company/SSTF.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+        <state relative-caret-position="308">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="37" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/comparators/MemoryAdressComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Request.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding>
+            <element signature="e#777#778#0" expanded="true" />
+            <element signature="e#809#810#0" expanded="true" />
+            <element signature="e#941#942#0" expanded="true" />
+            <element signature="e#986#987#0" expanded="true" />
+            <element signature="e#1026#1027#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/JDK/src.zip!/java/util/Random.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="165" column="17" selection-start-line="165" selection-start-column="17" selection-end-line="165" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/FD_SCAN.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="65" column="34" selection-start-line="65" selection-start-column="34" selection-end-line="65" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1188,37 +1125,101 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/RealTimeC_SCAN.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
+        <state relative-caret-position="289">
           <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
           <folding>
-            <element signature="e#157#158#0" expanded="true" />
-            <element signature="e#185#186#0" expanded="true" />
             <element signature="e#399#400#0" expanded="true" />
             <element signature="e#447#448#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/RealTimeFCFS.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/RealTimeSCAN.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-          <folding />
+        <state relative-caret-position="182">
+          <caret line="29" column="73" selection-start-line="29" selection-start-column="73" selection-end-line="29" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Queue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="43" column="34" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
+        <state relative-caret-position="53">
+          <caret line="30" column="62" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/RealTimeFCFS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="24" column="101" selection-start-line="24" selection-start-column="101" selection-end-line="24" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/RealTimeSSTF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="27" column="95" selection-start-line="27" selection-start-column="95" selection-end-line="27" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/EDF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#242#243#0" expanded="true" />
+            <element signature="e#1201#1202#0" expanded="true" />
+            <element signature="e#1272#1273#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="80" selection-start-line="19" selection-start-column="80" selection-end-line="19" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/comparators/DeadlineComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <element signature="e#266#267#0" expanded="true" />
+            <element signature="e#317#318#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/RealTimeStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2006#2015#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Strategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="68" column="52" selection-start-line="68" selection-start-column="52" selection-end-line="68" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

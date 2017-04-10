@@ -40,4 +40,8 @@ public class Request {
     public int getDeadline() {
         return deadline;
     }
+
+    public void setDeadline(int deadline) {
+        this.deadline = deadline;
+    }
 }

@@ -23,22 +23,22 @@ public class DeadlineComparator implements Comparator{
         if(r1.getDeadline() == -1){
             if(r2.getDeadline() == -1){
                 if(Math.abs(r1.getMemAdress() - currentAddress) > Math.abs(r2.getMemAdress() - currentAddress)){
-                    x = -1;
+                    x = 1;
                 }
                 else if(Math.abs(r1.getMemAdress() - currentAddress) < Math.abs(r2.getMemAdress() - currentAddress)){
-                    x = 1;
+                    x = -1;
                 }
             }
             else{
-                x = -1;
+                x = 1;
             }
         }
         else if(r2.getDeadline() == -1){
-            x = 1;
+            x = -1;
         }
         else{
-            if(r1.getDeadline()> r2.getDeadline()) x = -1;
-            else if(r1.getDeadline() < r2.getDeadline()) x = 1;
+            if(r1.getDeadline()> r2.getDeadline()) x = 1;
+            else if(r1.getDeadline() < r2.getDeadline()) x = -1;
         }
         return x;
     }

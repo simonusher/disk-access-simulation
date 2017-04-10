@@ -50,8 +50,10 @@ public abstract class Strategy {
     public void createChart(){
         dataset = new XYSeriesCollection();
         dataset.addSeries(series);
+        String className = this.getClass().getName();
+        className = className.substring(12);
         chart = ChartFactory.createXYLineChart(
-                "Zgłoszenia", // Title
+                className, // Title
                 "Obsłużone zgłoszenie", // x-axis Label
                 "Adres zgłoszenia", // y-axis Label
                 dataset, // Dataset
@@ -64,7 +66,7 @@ public abstract class Strategy {
 
     public void saveChart(String filename){
         try {
-            ChartUtilities.saveChartAsJPEG(new File("C:\\Users\\Szymon\\Desktop\\" + filename), chart, 1000, 600);
+            ChartUtilities.saveChartAsJPEG(new File(filename), chart, 1000, 600);
         } catch (IOException e) {
             System.err.println("Problem occurred creating chart.");
         }
